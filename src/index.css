@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-assam-dark: #0c2340;
+  --color-assam-navy: #13335a;
+  --color-assam-gold: #c29b38;
+  --color-assam-lightgold: #f9f3e5;
+  --color-assam-red: #b91c1c;
+  --color-assam-green: #15803d;
+  --color-assam-paper: #fcfbfa;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f1f5f9;
+}
+
+.font-assamese {
+  font-family: 'Noto Serif Bengali', 'Mukti Narrow', Kalpurush, SolaimanLipi, serif;
+}
+
+/* Custom scrollbars for synchronized editor */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.issue-highlight-error {
+  background-color: #fee2e2;
+  border-bottom: 2px wavy #ef4444;
+  cursor: pointer;
+  padding: 1px 3px;
+  border-radius: 2px;
+}
+
+.issue-highlight-warning {
+  background-color: #fef3c7;
+  border-bottom: 2px wavy #f59e0b;
+  cursor: pointer;
+  padding: 1px 3px;
+  border-radius: 2px;
+}
+
+.issue-highlight-info {
+  background-color: #e0f2fe;
+  border-bottom: 2px dashed #0284c7;
+  cursor: pointer;
+  padding: 1px 3px;
+  border-radius: 2px;
+}
