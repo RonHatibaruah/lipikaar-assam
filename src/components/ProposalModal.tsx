@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Copy, Check, BookOpen, Layers } from 'lucide-react';
+import { X, Copy, Check, BookOpen, Layers, Download } from 'lucide-react';
 
 interface ProposalModalProps {
   isOpen: boolean;
@@ -303,9 +303,19 @@ export const ProposalModal: React.FC<ProposalModalProps> = ({ isOpen, onClose })
               <p className="text-xs text-slate-400">All 12 Form Sections Strictly Calibrated Under 500 Words Each</p>
             </div>
           </div>
-          <button onClick={onClose} className="text-slate-400 hover:text-white p-1 rounded-md">
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center space-x-2">
+            <a
+              href="/NESFIC-D-38_Proposal_Document_Lipikaar_Assam.pdf"
+              download="NESFIC-D-38_Proposal_Document_Lipikaar_Assam.pdf"
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-3.5 py-1.5 rounded-lg flex items-center space-x-1.5 shadow transition"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download Proposal PDF</span>
+            </a>
+            <button onClick={onClose} className="text-slate-400 hover:text-white p-1 rounded-md">
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Body Layout: Left Sidebar + Right Document Viewer */}

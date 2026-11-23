@@ -28,12 +28,20 @@ export const ProofOfWorkModal: React.FC<ProofOfWorkModalProps> = ({ isOpen, onCl
             </div>
           </div>
           <div className="flex items-center space-x-2">
+            <a
+              href="/NESFIC-D-38_Proof_of_Work_Lipikaar_Assam.pdf"
+              download="NESFIC-D-38_Proof_of_Work_Lipikaar_Assam.pdf"
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-3.5 py-1.5 rounded-lg flex items-center space-x-1.5 shadow transition"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download PDF</span>
+            </a>
             <button
               onClick={handlePrint}
               className="bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold text-xs px-3.5 py-1.5 rounded-lg flex items-center space-x-1.5 shadow transition"
             >
               <Printer className="w-3.5 h-3.5 text-slate-950" />
-              <span>Print to PDF</span>
+              <span>Print View</span>
             </button>
             <button onClick={onClose} className="text-slate-400 hover:text-white p-1 rounded-md">
               <X className="w-5 h-5" />
