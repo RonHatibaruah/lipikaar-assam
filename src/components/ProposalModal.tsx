@@ -251,15 +251,15 @@ Open-Source Foundation: Built upon open-source frameworks (React, FastAPI, Postg
     id: 12,
     title: '12. Resources, risks & pilot validation',
     words: 346,
-    summary: 'Indicative Budget: ₹40L Grant (Technical Team ₹20L, Corpus ₹5.5L, Hosting ₹5L, Pilot ₹5L, Contingency ₹4.5L), Risks & Pilot.',
-    content: `Indicative Resource & Budget Allocation (Total Problem Statement Grant: ₹40.00 Lakhs):
-The total estimated development and validation budget is structured against the ₹40 Lakhs problem statement grant, allocated across five key operational headings:
-1. Technical Engineering Team (₹20.00 Lakhs / 50.0%): Full-stack React/TypeScript engineer, Senior Indic NLP specialist, backend/DevOps engineer, and QA automation over the 6-month lifecycle.
-2. Assamese Linguistic Corpus & Lexical Annotation (₹5.50 Lakhs / 13.75%): Lexicographer consultation (Hemkosh & Asam Sahitya Sabha standards), 10,000 golden test sentence annotation, and dialectal edge-case curation.
-3. Compute, SDC Cloud Hosting & Security Audit (₹5.00 Lakhs / 12.50%): SDC virtual server provisioning (8 vCPU/32GB RAM/SSD), local Indic model inference staging, and CERT-In empaneled security audit certification.
-4. On-Site Pilot Validation, UAT & Staff Training (₹5.00 Lakhs / 12.50%): 30-day parallel trial at Bamunimaidam press, bilingual instructional manuals, and hands-on capacity building for 30+ departmental staff.
-5. Project Governance, Change Management & Contingency (₹4.50 Lakhs / 11.25%): Field coordination, hardware/DTP workflow integration, and operational contingency reserve.
-Total Grant Allocation: ₹40.00 Lakhs (100%).
+    summary: 'Indicative Budget: Rs. 40L Grant (Technical Team Rs. 20L, Corpus Rs. 5.5L, Hosting Rs. 5L, Pilot Rs. 5L, Contingency Rs. 4.5L), Risks & Pilot.',
+    content: `Indicative Resource & Budget Allocation (Total Problem Statement Grant: Rs. 40.00 Lakhs):
+The total estimated development and validation budget is structured against the Rs. 40 Lakhs problem statement grant, allocated across five key operational headings:
+1. Technical Engineering Team (Rs. 20.00 Lakhs / 50.0%): Full-stack React/TypeScript engineer, Senior Indic NLP specialist, backend/DevOps engineer, and QA automation over the 6-month lifecycle.
+2. Assamese Linguistic Corpus & Lexical Annotation (Rs. 5.50 Lakhs / 13.75%): Lexicographer consultation (Hemkosh & Asam Sahitya Sabha standards), 10,000 golden test sentence annotation, and dialectal edge-case curation.
+3. Compute, SDC Cloud Hosting & Security Audit (Rs. 5.00 Lakhs / 12.50%): SDC virtual server provisioning (8 vCPU/32GB RAM/SSD), local Indic model inference staging, and CERT-In empaneled security audit certification.
+4. On-Site Pilot Validation, UAT & Staff Training (Rs. 5.00 Lakhs / 12.50%): 30-day parallel trial at Bamunimaidam press, bilingual instructional manuals, and hands-on capacity building for 30+ departmental staff.
+5. Project Governance, Change Management & Contingency (Rs. 4.50 Lakhs / 11.25%): Field coordination, hardware/DTP workflow integration, and operational contingency reserve.
+Total Grant Allocation: Rs. 40.00 Lakhs (100%).
 
 Key Risks and Proposed Mitigations:
 - Staff Resistance to Digital Adoption (Medium): Traditional proofreading staff accustomed to paper markup may resist digital tools. Mitigation: Ergonomic split-screen UI mirroring traditional redline markup; single-keystroke approvals (Alt+A); involving proofreaders early in co-design.

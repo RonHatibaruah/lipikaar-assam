@@ -127,7 +127,7 @@ def generate_proposal_pdf(output_path, base_dir):
     # Title Banner
     story.append(Paragraph("NORTH-EAST SEVA FIRST INNOVATION CHALLENGE 2026 (NESFIC)", styles['DocSubTitle']))
     story.append(Paragraph("PROPOSAL SUBMISSION DOSSIER", styles['DocTitle']))
-    story.append(Paragraph("<b>Problem Statement ID:</b> NESFIC-D-38 &nbsp;|&nbsp; <b>Grant Envelope:</b> ₹40.00 Lakhs", styles['DocSubTitle']))
+    story.append(Paragraph("<b>Problem Statement ID:</b> NESFIC-D-38 &nbsp;|&nbsp; <b>Grant Envelope:</b> Rs. 40.00 Lakhs", styles['DocSubTitle']))
     
     meta_html = (
         "<b>Challenge Title:</b> Faster, More Consistent Multilingual Proofreading of Government Documents<br/>"
@@ -260,13 +260,13 @@ def generate_proposal_pdf(output_path, base_dir):
     # Section 12: Budget & Donut Chart
     story.append(Paragraph("12. Resources, risks & pilot validation", styles['SectionHeader']))
     story.append(Paragraph(
-        "<b>Indicative Resource & Budget Allocation (Total Problem Statement Grant: ₹40.00 Lakhs):</b><br/>"
-        "1. <b>Technical Engineering Team (₹20.00 Lakhs / 50.0%):</b> Full-stack React/TS engineer, Senior Indic NLP specialist, backend/DevOps engineer, QA specialist (6 months).<br/>"
-        "2. <b>Assamese Linguistic Corpus & Lexical Annotation (₹5.50 Lakhs / 13.75%):</b> Lexicographer consultation, 10,000 golden test sentence manual verification, linguistics advisory.<br/>"
-        "3. <b>Compute, SDC Cloud Hosting & Security Audit (₹5.00 Lakhs / 12.50%):</b> SDC virtual server provisioning (8 vCPU/32GB RAM/SSD), local Indic model inference staging, CERT-In security audit.<br/>"
-        "4. <b>On-Site Pilot Validation, UAT & Staff Training (₹5.00 Lakhs / 12.50%):</b> 30-day parallel trial at Bamunimaidam press, bilingual user guides & video tutorials, training for 30+ staff.<br/>"
-        "5. <b>Project Governance, Change Management & Contingency (₹4.50 Lakhs / 11.25%):</b> Field coordination, hardware/DTP integration, compliance documentation, operational contingency reserve.<br/>"
-        "<i>Total Grant Allocation: ₹40.00 Lakhs (100.0%).</i>",
+        "<b>Indicative Resource & Budget Allocation (Total Problem Statement Grant: Rs. 40.00 Lakhs):</b><br/>"
+        "1. <b>Technical Engineering Team (Rs. 20.00 Lakhs / 50.0%):</b> Full-stack React/TS engineer, Senior Indic NLP specialist, backend/DevOps engineer, QA specialist (6 months).<br/>"
+        "2. <b>Assamese Linguistic Corpus & Lexical Annotation (Rs. 5.50 Lakhs / 13.75%):</b> Lexicographer consultation, 10,000 golden test sentence manual verification, linguistics advisory.<br/>"
+        "3. <b>Compute, SDC Cloud Hosting & Security Audit (Rs. 5.00 Lakhs / 12.50%):</b> SDC virtual server provisioning (8 vCPU/32GB RAM/SSD), local Indic model inference staging, CERT-In security audit.<br/>"
+        "4. <b>On-Site Pilot Validation, UAT & Staff Training (Rs. 5.00 Lakhs / 12.50%):</b> 30-day parallel trial at Bamunimaidam press, bilingual user guides & video tutorials, training for 30+ staff.<br/>"
+        "5. <b>Project Governance, Change Management & Contingency (Rs. 4.50 Lakhs / 11.25%):</b> Field coordination, hardware/DTP integration, compliance documentation, operational contingency reserve.<br/>"
+        "<i>Total Grant Allocation: Rs. 40.00 Lakhs (100.0%).</i>",
         styles['NormalBody']
     ))
 
@@ -274,7 +274,7 @@ def generate_proposal_pdf(output_path, base_dir):
     if os.path.exists(budget_path):
         story.append(Spacer(1, 4))
         story.append(RLImage(budget_path, width=440, height=255))
-        story.append(Paragraph("<i>Figure 4: Indicative Budget Breakdown of ₹40.00 Lakhs NESFIC-D-38 Problem Statement Grant</i>", styles['CaptionText']))
+        story.append(Paragraph("<i>Figure 4: Indicative Budget Breakdown of Rs. 40.00 Lakhs NESFIC-D-38 Problem Statement Grant</i>", styles['CaptionText']))
 
     story.append(Paragraph(
         "<b>Pilot Validation:</b> 30-day parallel trial at the Directorate of Printing & Stationery, Bamunimaidam, processing 15 Extraordinary Gazettes and 4 Regular Gazettes. Target: >65% turnaround time reduction, >95% errata capture rate, and zero escape to print.<br/><br/>"
@@ -303,7 +303,7 @@ def generate_proof_of_work_pdf(output_path, base_dir):
     story.append(Paragraph("<b>Problem Statement ID:</b> NESFIC-D-38 &nbsp;|&nbsp; <b>Directorate of Printing & Stationery</b>", styles['DocSubTitle']))
     
     meta_html = (
-        "<b>Platform:</b> Lipikaar Assam (লিপিকাৰ অসম) &nbsp;|&nbsp; <b>Grant Envelope:</b> ₹40.00 Lakhs<br/>"
+        "<b>Platform:</b> Lipikaar Assam (লিপিকাৰ অসম) &nbsp;|&nbsp; <b>Grant Envelope:</b> Rs. 40.00 Lakhs<br/>"
         "<b>Lead Applicant:</b> Abhisekh Satyam &nbsp;|&nbsp; <b>Submitting Enterprise:</b> RazorNext Software Pvt Ltd<br/>"
         "<b>Live Deployment URL:</b> https://lipikaar-assam.pages.dev &nbsp;|&nbsp; <b>GitHub:</b> https://github.com/RonHatibaruah/lipikaar-assam<br/>"
         "<b>Admin Demo Credentials:</b> admin@assam.gov.in / Admin@Assam2026 &nbsp;|&nbsp; <b>Copyright:</b> &copy; 2026 RazorNext Software Pvt Ltd"
@@ -403,11 +403,11 @@ def generate_proof_of_work_pdf(output_path, base_dir):
     story.append(Spacer(1, 8))
 
     # Budget Allocation & Donut Chart
-    story.append(Paragraph("6. Indicative Resource & Budget Allocation (Total Grant: ₹40.00 Lakhs)", styles['SectionHeader']))
+    story.append(Paragraph("6. Indicative Resource & Budget Allocation (Total Grant: Rs. 40.00 Lakhs)", styles['SectionHeader']))
     budget_path = os.path.join(base_dir, "budget_donut_chart.png")
     if os.path.exists(budget_path):
         story.append(RLImage(budget_path, width=440, height=255))
-        story.append(Paragraph("<i>Exhibit D: ₹40.00 Lakhs Budget Allocation with ₹20.00 Lakhs Technical Engineering Team</i>", styles['CaptionText']))
+        story.append(Paragraph("<i>Exhibit D: Rs. 40.00 Lakhs Budget Allocation with Rs. 20.00 Lakhs Technical Engineering Team</i>", styles['CaptionText']))
 
     # Credentials & Verification Block
     story.append(Paragraph("7. Platform Verification & Submission Credentials", styles['SectionHeader']))

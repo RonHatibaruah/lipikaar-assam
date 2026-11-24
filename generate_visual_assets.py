@@ -20,11 +20,11 @@ BG_LIGHT = '#f8fafc'
 
 def generate_budget_chart(output_path):
     labels = [
-        'Technical Engineering Team\n(₹20.00 L / 50.0%)',
-        'Assamese Linguistic Corpus\n(₹5.50 L / 13.8%)',
-        'Compute, SDC & Security\n(₹5.00 L / 12.5%)',
-        'Pilot Validation & Training\n(₹5.00 L / 12.5%)',
-        'Governance & Contingency\n(₹4.50 L / 11.2%)'
+        'Technical Engineering Team\n(Rs. 20.00 L / 50.0%)',
+        'Assamese Linguistic Corpus\n(Rs. 5.50 L / 13.8%)',
+        'Compute, SDC & Security\n(Rs. 5.00 L / 12.5%)',
+        'Pilot Validation & Training\n(Rs. 5.00 L / 12.5%)',
+        'Governance & Contingency\n(Rs. 4.50 L / 11.2%)'
     ]
     sizes = [20.00, 5.50, 5.00, 5.00, 4.50]
     colors_list = ['#0c2340', '#c29b38', '#13335a', '#15803d', '#64748b']
@@ -55,7 +55,7 @@ def generate_budget_chart(output_path):
 
     # Center Text
     ax.text(0, 0.08, 'TOTAL GRANT', ha='center', va='center', fontsize=9, color='#64748b', weight='bold')
-    ax.text(0, -0.08, '₹40.00 Lakhs', ha='center', va='center', fontsize=12, color='#0c2340', weight='bold')
+    ax.text(0, -0.08, 'Rs. 40.00 Lakhs', ha='center', va='center', fontsize=12, color='#0c2340', weight='bold')
 
     ax.axis('equal')  
     plt.title('Indicative Resource & Budget Allocation (NESFIC-D-38)\nDirectorate of Printing & Stationery, Assam', 

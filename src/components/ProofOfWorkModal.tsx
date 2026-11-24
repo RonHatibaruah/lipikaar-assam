@@ -217,7 +217,7 @@ export const ProofOfWorkModal: React.FC<ProofOfWorkModalProps> = ({ isOpen, onCl
           {/* Section 5: Indicative Resource & Budget Allocation */}
           <div className="space-y-2 text-xs">
             <h3 className="text-sm font-bold text-slate-900 border-l-4 border-amber-500 pl-2 uppercase tracking-wide">
-              5. Indicative Resource & Budget Allocation (Problem Statement Grant: ₹40.00 Lakhs)
+              5. Indicative Resource & Budget Allocation (Problem Statement Grant: Rs. 40.00 Lakhs)
             </h3>
             <div className="border border-slate-200 rounded-xl overflow-hidden">
               <table className="w-full text-left text-xs">
@@ -232,39 +232,39 @@ export const ProofOfWorkModal: React.FC<ProofOfWorkModalProps> = ({ isOpen, onCl
                 <tbody className="divide-y divide-slate-100">
                   <tr className="bg-amber-50/40">
                     <td className="py-2 px-3 font-bold text-slate-900">1. Technical Engineering Team</td>
-                    <td className="py-2 px-3 font-bold text-amber-900">₹20.00 Lakhs</td>
+                    <td className="py-2 px-3 font-bold text-amber-900">Rs. 20.00 Lakhs</td>
                     <td className="py-2 px-3 font-bold text-slate-700">50.0%</td>
                     <td className="py-2 px-3 text-slate-600">Full-Stack React/TS Engineer, Senior Indic NLP Specialist, Backend/DevOps Engineer, QA Specialist (6 months).</td>
                   </tr>
                   <tr>
                     <td className="py-2 px-3 font-semibold text-slate-800">2. Assamese Linguistic Corpus Curation</td>
-                    <td className="py-2 px-3 font-semibold text-slate-900">₹5.50 Lakhs</td>
+                    <td className="py-2 px-3 font-semibold text-slate-900">Rs. 5.50 Lakhs</td>
                     <td className="py-2 px-3 text-slate-700">13.75%</td>
                     <td className="py-2 px-3 text-slate-600">Asam Sahitya Sabha & Hemkosh lexicon digitization, golden dataset manual annotation, computational linguistics advisory.</td>
                   </tr>
                   <tr>
                     <td className="py-2 px-3 font-semibold text-slate-800">3. Compute, SDC Hosting & Security Audit</td>
-                    <td className="py-2 px-3 font-semibold text-slate-900">₹5.00 Lakhs</td>
+                    <td className="py-2 px-3 font-semibold text-slate-900">Rs. 5.00 Lakhs</td>
                     <td className="py-2 px-3 text-slate-700">12.50%</td>
                     <td className="py-2 px-3 text-slate-600">Assam State Data Centre virtual server provisioning, local Indic model inference staging, and CERT-In security audit.</td>
                   </tr>
                   <tr>
                     <td className="py-2 px-3 font-semibold text-slate-800">4. On-Site Pilot Validation & Staff Training</td>
-                    <td className="py-2 px-3 font-semibold text-slate-900">₹5.00 Lakhs</td>
+                    <td className="py-2 px-3 font-semibold text-slate-900">Rs. 5.00 Lakhs</td>
                     <td className="py-2 px-3 text-slate-700">12.50%</td>
                     <td className="py-2 px-3 text-slate-600">30-day parallel trial at Bamunimaidam press, bilingual user guides & video tutorials, training for 30+ departmental staff.</td>
                   </tr>
                   <tr>
                     <td className="py-2 px-3 font-semibold text-slate-800">5. Project Governance & Contingency</td>
-                    <td className="py-2 px-3 font-semibold text-slate-900">₹4.50 Lakhs</td>
+                    <td className="py-2 px-3 font-semibold text-slate-900">Rs. 4.50 Lakhs</td>
                     <td className="py-2 px-3 text-slate-700">11.25%</td>
                     <td className="py-2 px-3 text-slate-600">Stakeholder liaison, legacy DTP hardware/workflow integration, compliance documentation, operational contingency.</td>
                   </tr>
                   <tr className="bg-slate-100 font-bold text-slate-900">
                     <td className="py-2.5 px-3">Total Project Budget</td>
-                    <td className="py-2.5 px-3 text-emerald-700 font-bold">₹40.00 Lakhs</td>
+                    <td className="py-2.5 px-3 text-emerald-700 font-bold">Rs. 40.00 Lakhs</td>
                     <td className="py-2.5 px-3">100.0%</td>
-                    <td className="py-2.5 px-3 text-emerald-800">Fully utilizes the ₹40 Lakhs Problem Statement Grant.</td>
+                    <td className="py-2.5 px-3 text-emerald-800">Fully utilizes the Rs. 40.00 Lakhs Problem Statement Grant.</td>
                   </tr>
                 </tbody>
               </table>
