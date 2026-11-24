@@ -169,12 +169,12 @@ Assumptions: All training and validation data utilized consists solely of unclas
   {
     id: 8,
     title: '8. Team, manpower & expertise',
-    words: 368,
-    summary: '6 multidisciplinary specialists: Project Lead, Indic NLP Engineer, Assamese Linguist, Full-Stack Engineer, DevOps, and QA.',
-    content: `The project will be executed by a compact, highly specialized multidisciplinary team combining deep expertise in Indic Natural Language Processing, enterprise web engineering, and Assamese computational linguistics.
+    words: 376,
+    summary: 'Lead Applicant: Abhisekh Satyam (RazorNext Software Pvt Ltd), Senior Indic NLP, Assamese Linguist, Full-Stack, DevOps, QA.',
+    content: `The project will be executed by RazorNext Software Pvt Ltd, deploying a compact, highly specialized multidisciplinary team combining deep expertise in Indic Natural Language Processing, enterprise web engineering, and Assamese computational linguistics.
 
 Team Roles, Expertise & Manpower Allocation:
-1. Project Lead & Solutions Architect (1 FTE – Weeks 1–24): 10+ years in enterprise software architecture, full-stack systems, and e-governance solutions; specialized in designing fault-tolerant, high-concurrency editorial workflows. Responsibilities: Overall project delivery, technical roadmap, government stakeholder liaison, architectural governance, and SDC infrastructure deployment.
+1. Lead Applicant & Solutions Architect — Abhisekh Satyam (RazorNext Software Pvt Ltd, 1 FTE – Weeks 1–24): 10+ years in enterprise software architecture, full-stack systems, and e-governance solutions; specialized in designing fault-tolerant, high-concurrency editorial workflows. Responsibilities: Overall project delivery, technical roadmap, government stakeholder liaison, architectural governance, and SDC infrastructure deployment.
 2. Senior Indic NLP & Machine Learning Engineer (1 FTE – Weeks 1–20): M.Tech/Ph.D. in Computer Science/NLP with 6+ years specializing in low-resource Indic languages, transformer fine-tuning, tokenization, and morphological analyzers. Responsibilities: Leading the development of the Assamese orthography engine, neural grammar scoring, contextual error classification, and OCR post-processing.
 3. Assamese Computational Linguist & Lexical Specialist (1 FTE – Weeks 1–16): Advanced degree in Assamese Linguistics with comprehensive mastery of Asam Sahitya Sabha orthographic standards, Hemkosh administrative lexicography, and Assamese conjunct typography. Responsibilities: Curating and validating the administrative termbase, authoring orthographic finite-state rules, annotating benchmark datasets, and resolving linguistic ambiguities.
 4. Lead Full-Stack Web Application Engineer (1 FTE – Weeks 5–24): 7+ years in modern frontend architectures (React, TypeScript, Tailwind CSS), virtualized DOM rendering, interactive diffing algorithms, and web accessibility (GIGW/WCAG). Responsibilities: Building the synchronized split-screen editor, user interaction modules, responsive workbench, and one-click correction interfaces.

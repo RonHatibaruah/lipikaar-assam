@@ -102,6 +102,14 @@ def build_pdf_styles():
         alignment=1,
         spaceAfter=8
     ))
+    styles.add(ParagraphStyle(
+        name='DisclaimerText',
+        fontName=FONT_NORMAL,
+        fontSize=7.5,
+        leading=10.5,
+        textColor=TEXT_MUTED,
+        spaceAfter=10
+    ))
     return styles
 
 def generate_proposal_pdf(output_path, base_dir):
@@ -124,11 +132,22 @@ def generate_proposal_pdf(output_path, base_dir):
     meta_html = (
         "<b>Challenge Title:</b> Faster, More Consistent Multilingual Proofreading of Government Documents<br/>"
         "<b>Apex Beneficiary Department:</b> Directorate of Printing & Stationery, Government of Assam (Bamunimaidam, Guwahati)<br/>"
+        "<b>Lead Applicant:</b> Abhisekh Satyam &nbsp;|&nbsp; <b>Submitting Enterprise:</b> RazorNext Software Pvt Ltd<br/>"
         "<b>Proposed Solution:</b> Lipikaar Assam (লিপিকাৰ অসম) — Multilingual Proofreading & Gazette Linter<br/>"
-        "<b>Live Production URL:</b> https://lipikaar-assam.pages.dev &nbsp;|&nbsp; <b>GitHub:</b> https://github.com/RonHatibaruah/lipikaar-assam"
+        "<b>Live Production URL:</b> https://lipikaar-assam.pages.dev &nbsp;|&nbsp; <b>GitHub:</b> https://github.com/RonHatibaruah/lipikaar-assam<br/>"
+        "<b>Copyright:</b> &copy; 2026 RazorNext Software Pvt Ltd. All rights reserved."
     )
     story.append(Paragraph(meta_html, styles['MetaBox']))
-    story.append(HRFlowable(width="100%", thickness=1.5, color=ACCENT, spaceBefore=0, spaceAfter=10))
+    story.append(HRFlowable(width="100%", thickness=1.5, color=ACCENT, spaceBefore=0, spaceAfter=8))
+
+    disclaimer_html = (
+        "<b>Statutory Governance Disclaimer:</b> This technical proposal and architectural prototype (Lipikaar Assam) have been "
+        "formulated by <b>RazorNext Software Pvt Ltd</b> under Lead Applicant <b>Abhisekh Satyam</b> strictly in response to Problem Statement "
+        "ID <b>NESFIC-D-38</b> under the North-East Seva First Innovation Challenge (NESFIC 2026). All demonstration credentials, simulated gazettes, "
+        "and workflow benchmarks are for technical evaluation and feasibility demonstration purposes."
+    )
+    story.append(Paragraph(disclaimer_html, styles['DisclaimerText']))
+    story.append(HRFlowable(width="100%", thickness=0.5, color=BORDER_COLOR, spaceBefore=0, spaceAfter=10))
 
     # Section 1
     story.append(Paragraph("1. Problem understanding & user workflow", styles['SectionHeader']))
@@ -205,7 +224,10 @@ def generate_proposal_pdf(output_path, base_dir):
 
     story.append(Paragraph("8. Team, manpower & expertise", styles['SectionHeader']))
     story.append(Paragraph(
-        "Dedicated team of 6 domain specialists: (1) Project Lead & Architect (1 FTE), (2) Senior Indic NLP Specialist (1 FTE), (3) Assamese Computational Linguist (1 FTE), (4) Full-Stack Web Application Engineer (1 FTE), (5) Backend & DevOps Security Engineer (1 FTE), (6) QA & Training Specialist (1 FTE), supported by senior advisory gazette editors.",
+        "Led by <b>Abhisekh Satyam (Lead Applicant & Solutions Architect, RazorNext Software Pvt Ltd)</b> alongside an enterprise engineering team of 6 domain specialists: "
+        "(1) Project Lead & Architect — Abhisekh Satyam (1 FTE), (2) Senior Indic NLP Specialist (1 FTE), (3) Assamese Computational Linguist (1 FTE), "
+        "(4) Full-Stack Web Application Engineer (1 FTE), (5) Backend & DevOps Security Engineer (1 FTE), (6) QA & Training Specialist (1 FTE), "
+        "supported by senior advisory gazette editors from Guwahati.",
         styles['NormalBody']
     ))
 
@@ -255,7 +277,8 @@ def generate_proposal_pdf(output_path, base_dir):
         story.append(Paragraph("<i>Figure 4: Indicative Budget Breakdown of ₹40.00 Lakhs NESFIC-D-38 Problem Statement Grant</i>", styles['CaptionText']))
 
     story.append(Paragraph(
-        "<b>Pilot Validation:</b> 30-day parallel trial at the Directorate of Printing & Stationery, Bamunimaidam, processing 15 Extraordinary Gazettes and 4 Regular Gazettes. Target: >65% turnaround time reduction, >95% errata capture rate, and zero escape to print.",
+        "<b>Pilot Validation:</b> 30-day parallel trial at the Directorate of Printing & Stationery, Bamunimaidam, processing 15 Extraordinary Gazettes and 4 Regular Gazettes. Target: >65% turnaround time reduction, >95% errata capture rate, and zero escape to print.<br/><br/>"
+        "<b>Lead Applicant:</b> Abhisekh Satyam &bull; <b>Submitting Enterprise:</b> RazorNext Software Pvt Ltd &bull; <b>Copyright &copy; 2026 RazorNext Software Pvt Ltd. All rights reserved.</b>",
         styles['NormalBody']
     ))
 
@@ -281,11 +304,21 @@ def generate_proof_of_work_pdf(output_path, base_dir):
     
     meta_html = (
         "<b>Platform:</b> Lipikaar Assam (লিপিকাৰ অসম) &nbsp;|&nbsp; <b>Grant Envelope:</b> ₹40.00 Lakhs<br/>"
+        "<b>Lead Applicant:</b> Abhisekh Satyam &nbsp;|&nbsp; <b>Submitting Enterprise:</b> RazorNext Software Pvt Ltd<br/>"
         "<b>Live Deployment URL:</b> https://lipikaar-assam.pages.dev &nbsp;|&nbsp; <b>GitHub:</b> https://github.com/RonHatibaruah/lipikaar-assam<br/>"
-        "<b>Admin Demo Credentials:</b> admin@assam.gov.in / Admin@Assam2026"
+        "<b>Admin Demo Credentials:</b> admin@assam.gov.in / Admin@Assam2026 &nbsp;|&nbsp; <b>Copyright:</b> &copy; 2026 RazorNext Software Pvt Ltd"
     )
     story.append(Paragraph(meta_html, styles['MetaBox']))
-    story.append(HRFlowable(width="100%", thickness=1.5, color=ACCENT, spaceBefore=0, spaceAfter=10))
+    story.append(HRFlowable(width="100%", thickness=1.5, color=ACCENT, spaceBefore=0, spaceAfter=8))
+
+    disclaimer_html = (
+        "<b>Statutory Governance Disclaimer:</b> This proof of work dossier and live functional demonstrator have been engineered by "
+        "<b>RazorNext Software Pvt Ltd</b> under Lead Applicant <b>Abhisekh Satyam</b> exclusively for evaluation by the Directorate of Printing & Stationery "
+        "and the Assam Innovation & Startup Foundation (AISF) for Problem Statement NESFIC-D-38. All administrative simulations, test gazettes, "
+        "and credentials are for evaluative benchmarking only."
+    )
+    story.append(Paragraph(disclaimer_html, styles['DisclaimerText']))
+    story.append(HRFlowable(width="100%", thickness=0.5, color=BORDER_COLOR, spaceBefore=0, spaceAfter=10))
 
     # 1. Executive Summary
     story.append(Paragraph("1. Executive Summary & Problem Scope", styles['SectionHeader']))
@@ -379,6 +412,7 @@ def generate_proof_of_work_pdf(output_path, base_dir):
     # Credentials & Verification Block
     story.append(Paragraph("7. Platform Verification & Submission Credentials", styles['SectionHeader']))
     cert_html = (
+        "<b>Lead Applicant:</b> Abhisekh Satyam &nbsp;|&nbsp; <b>Submitting Enterprise:</b> RazorNext Software Pvt Ltd<br/>"
         "<b>Live Production Platform URL:</b> <font color='#13335a'><u>https://lipikaar-assam.pages.dev</u></font><br/>"
         "<b>Deployment Preview URL:</b> <font color='#13335a'><u>https://b60742f5.lipikaar-assam.pages.dev</u></font><br/>"
         "<b>GitHub Open-Source Repository:</b> <font color='#13335a'><u>https://github.com/RonHatibaruah/lipikaar-assam</u></font><br/>"
@@ -387,6 +421,14 @@ def generate_proof_of_work_pdf(output_path, base_dir):
         "<i>Certified on: November 24, 2026 for the Assam Innovation & Startup Foundation (AISF).</i>"
     )
     story.append(Paragraph(cert_html, styles['NormalBody']))
+
+    story.append(Paragraph("8. Legal Notice & Copyright", styles['SectionHeader']))
+    legal_html = (
+        "Copyright &copy; 2026 RazorNext Software Pvt Ltd. All rights reserved.<br/>"
+        "Submitted under North-East Seva First Innovation Challenge (NESFIC 2026), Government of Assam. "
+        "Any unauthorized commercial distribution or extraction outside the scope of the NESFIC evaluation is strictly prohibited."
+    )
+    story.append(Paragraph(legal_html, styles['DisclaimerText']))
 
     doc.build(story)
     print("Generated visual Proof of Work PDF:", output_path)

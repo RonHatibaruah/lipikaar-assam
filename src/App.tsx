@@ -14,6 +14,7 @@ import { ProposalModal } from './components/ProposalModal';
 import { AdminLoginModal } from './components/AdminLoginModal';
 import { AdminDashboard } from './components/AdminDashboard';
 import { ProofOfWorkModal } from './components/ProofOfWorkModal';
+import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
   const [documents, setDocuments] = useState<GazetteDocument[]>(INITIAL_DOCUMENTS);
@@ -260,6 +261,9 @@ export const App: React.FC = () => {
           </div>
         </div>
       </main>
+
+      {/* Global GovTech Footer with Lead Applicant, Disclaimer & Copyright */}
+      <Footer />
 
       {/* Modals */}
       <LegacyFontModal

@@ -14,7 +14,9 @@ import {
   Printer,
   Lock,
   Unlock,
-  Sliders
+  Sliders,
+  Building2,
+  User
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -49,16 +51,24 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="bg-slate-900 text-white border-b border-slate-800 shadow-lg sticky top-0 z-30">
       {/* Top Banner */}
-      <div className="bg-slate-950 px-4 py-1.5 text-xs text-slate-400 flex flex-wrap items-center justify-between border-b border-slate-800">
-        <div className="flex items-center space-x-2">
+      <div className="bg-slate-950 px-4 py-1.5 text-xs text-slate-400 flex flex-wrap items-center justify-between border-b border-slate-800 gap-2">
+        <div className="flex items-center space-x-2 flex-wrap">
           <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           <span className="font-semibold text-slate-300">
             Directorate of Printing & Stationery, Assam (অসম চৰকাৰৰ মুদ্ৰণ আৰু লেখন-সামগ্ৰী সঞ্চালকালয়)
           </span>
           <span className="text-slate-600">|</span>
-          <span className="text-amber-400 font-medium">NESFIC-D-38 e-Gov Innovation</span>
+          <span className="text-amber-400 font-medium">NESFIC-D-38 e-Gov Challenge</span>
+          <span className="text-slate-600">|</span>
+          <span className="text-emerald-400 font-semibold flex items-center gap-1">
+            <User className="w-3 h-3" /> Lead Applicant: <strong>Abhisekh Satyam</strong>
+          </span>
+          <span className="text-slate-600">|</span>
+          <span className="text-slate-300 flex items-center gap-1">
+            <Building2 className="w-3 h-3 text-amber-400" /> RazorNext Software Pvt Ltd
+          </span>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-3 text-xs">
           <div className="flex items-center space-x-1.5">
             <UserCheck className="w-3.5 h-3.5 text-slate-400" />
             <span>Role:</span>
@@ -123,7 +133,7 @@ export const Header: React.FC<HeaderProps> = ({
               </span>
             </div>
             <p className="text-xs text-slate-400">
-              Multilingual Proofreader & Gazette Statutory Linter for Assam Government Publications
+              Multilingual Proofreader & Gazette Statutory Linter for Assam Government Publications &bull; By RazorNext Software Pvt Ltd
             </p>
           </div>
         </div>

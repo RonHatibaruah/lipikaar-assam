@@ -66,6 +66,8 @@ export const ProofOfWorkModal: React.FC<ProofOfWorkModalProps> = ({ isOpen, onCl
               Prepared for: <strong>Directorate of Printing & Stationery, Government of Assam (Bamunimaidam, Guwahati)</strong>
               <br />
               Target Portal: <em>startup.assam.gov.in/nesfic26</em> | Submission Category: Generative AI & Language Tools
+              <br />
+              <strong className="text-amber-800">Lead Applicant: Abhisekh Satyam</strong> &bull; <strong>Submitting Agency: RazorNext Software Pvt Ltd</strong>
             </p>
           </div>
 
@@ -269,10 +271,22 @@ export const ProofOfWorkModal: React.FC<ProofOfWorkModalProps> = ({ isOpen, onCl
             </div>
           </div>
 
+          {/* Statutory Disclaimer & Copyright Block */}
+          <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-1.5 text-slate-600 leading-relaxed">
+            <div className="font-bold text-slate-900 uppercase text-[10px] tracking-wider">Statutory Governance Disclaimer:</div>
+            <p className="text-[11px]">
+              Lipikaar Assam (লিপিকাৰ অসম) is an AI-assisted and rule-governed proofreading workbench developed for the <strong>North-East Seva First Innovation Challenge 2026 (NESFIC-D-38)</strong> for the <strong>Directorate of Printing & Stationery, Government of Assam</strong>. The platform operates strictly under a <strong>Human-in-the-Loop</strong> operational paradigm and does not publish, alter, or disseminate official government documents autonomously. All gazette notifications and administrative orders require authoritative editorial review and statutory sign-off by competent government authorities prior to public dissemination.
+            </p>
+            <div className="text-[11px] font-semibold text-slate-800 pt-1 border-t border-slate-200 flex justify-between items-center">
+              <span>Copyright &copy; 2026 RazorNext Software Pvt Ltd. All rights reserved.</span>
+              <span className="text-amber-800">Lead Applicant: Abhisekh Satyam</span>
+            </div>
+          </div>
+
           {/* Document Footer Signoff */}
-          <div className="pt-6 border-t border-slate-200 text-xs text-slate-500 flex justify-between items-center">
-            <span>Lipikaar Assam • Directorate of Printing & Stationery, Assam (NESFIC-D-38)</span>
-            <span>Generated on: November 24, 2026 • Certified Proof of Work</span>
+          <div className="pt-4 border-t border-slate-200 text-xs text-slate-500 flex justify-between items-center">
+            <span>Lipikaar Assam &bull; RazorNext Software Pvt Ltd &bull; Directorate of Printing & Stationery, Assam (NESFIC-D-38)</span>
+            <span>Lead Applicant: Abhisekh Satyam &bull; Certified on: November 24, 2026</span>
           </div>
         </div>
 
